@@ -128,7 +128,8 @@ class _ChickTransferListState extends State<ChickTransferList> {
                               onTap: () {
                                 print('tap');
                                 // _addInfo();
-                                box.put('FarmName', data[index]['_source']['FarmName']);
+                                box.put('FarmName',
+                                    data[index]['_source']['FarmName']);
                                 box.put('FarmID', data[index]['_id']);
                                 print('Info Added');
                                 Navigator.push(

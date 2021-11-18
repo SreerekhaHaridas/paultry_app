@@ -20,7 +20,6 @@ import 'package:paultry_app/forms/transaction_forms/dailyEntryList.dart';
 import 'package:paultry_app/utils/common_ui.dart';
 
 class FormMenu extends StatefulWidget {
-
   @override
   _FormMenuState createState() => _FormMenuState();
 }
@@ -58,7 +57,7 @@ class _FormMenuState extends State<FormMenu> {
           itemBuilder: (BuildContext context, int index) {
             return Card(
               elevation: 10,
-              color: Colors.white,
+              color: Colors.orange,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(20.0),
@@ -87,63 +86,63 @@ class _FormMenuState extends State<FormMenu> {
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => FarmlistCubit(url: '')..fetchData(),
-                child: farmListWidget(),
-              )));
+                    create: (context) => FarmlistCubit(url: '')..fetchData(),
+                    child: farmListWidget(),
+                  )));
     else if (index == 1)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) =>
-                HatcherymasterlistCubit(url: '')..fetchData(),
-                child: MasterHatcheryWidget(),
-              )));
+                    create: (context) =>
+                        HatcherymasterlistCubit(url: '')..fetchData(),
+                    child: MasterHatcheryWidget(),
+                  )));
     else if (index == 2)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => ChicktransferlistCubit(url: '')
-                  ..fetchData(DateTime.now(), DateTime.now()),
-                child: ChickTransferList(),
-              )));
+                    create: (context) => ChicktransferlistCubit(url: '')
+                      ..fetchData(DateTime.now(), DateTime.now()),
+                    child: ChickTransferList(),
+                  )));
     else if (index == 3)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => DeliverylistCubit(url: '')
-                  ..fetchData(DateTime.now(), DateTime.now()),
-                child: DeliveryListWidget(),
-              )));
+                    create: (context) => DeliverylistCubit(url: '')
+                      ..fetchData(DateTime.now(), DateTime.now()),
+                    child: DeliveryListWidget(),
+                  )));
     else if (index == 4)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => HatcherytransactionlistCubit(url: '')
-                  ..fetchData(DateTime.now(), DateTime.now()),
-                child: HatcheryTransactionList(),
-              )));
+                    create: (context) => HatcherytransactionlistCubit(url: '')
+                      ..fetchData(DateTime.now(), DateTime.now()),
+                    child: HatcheryTransactionList(),
+                  )));
     else if (index == 5)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => DailyentrylistCubit(url: '')
-                  ..fetchData(DateTime.now(), DateTime.now()),
-                child: DailyEntryWidget(),
-              )));
+                    create: (context) => DailyentrylistCubit(url: '')
+                      ..fetchData(DateTime.now(), DateTime.now()),
+                    child: DailyEntryWidget(),
+                  )));
     else if (index == 6)
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => BlocProvider(
-                create: (context) => PickuplistCubit(url: '')
-                  ..fetchData(DateTime.now(), DateTime.now()),
-                child: PickupListWidget(),
-              )));
+                    create: (context) => PickuplistCubit(url: '')
+                      ..fetchData(DateTime.now(), DateTime.now()),
+                    child: PickupListWidget(),
+                  )));
     else if (index == 7)
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => View_Report()));
