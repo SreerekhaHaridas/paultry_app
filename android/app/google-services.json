@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740854271302",
+    "project_id": "algo-project-46e88",
+    "storage_bucket": "algo-project-46e88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740854271302:android:08786d10aebf2f350e6947",
+        "android_client_info": {
+          "package_name": "com.algoray.paultry_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740854271302-503at02745mq13fqht1oonma271f1skn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1fJuGxF02O5cMTORXv_3F8eoiG09Gw8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740854271302-503at02745mq13fqht1oonma271f1skn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
