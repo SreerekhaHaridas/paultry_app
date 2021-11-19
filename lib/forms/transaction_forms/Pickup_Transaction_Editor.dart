@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable, file_names, prefer_const_constructors, non_constant_identifier_names, avoid_print, avoid_unnecessary_containers, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
 import 'package:paultry_app/WebServices/WebserviceHelper.dart';
 import 'package:paultry_app/datamodels/transaction/pickup.dart';
@@ -288,6 +289,9 @@ class _PickUpState extends State<PickUp> {
         splashColor: Colors.lightGreen,
         onPressed: () async {
           if (_FormKey.currentState!.validate()) {}
+          Box box = Hive.box('Farm');
+          // chick.FarmName = box.get('FarmName');
+          pick.FarmId = box.get('FarmID');
           pick.date = selectedDate;
           pick.BatchId = batchInputcontroller.text;
           pick.FarmId = farmidInputcontroller.text;

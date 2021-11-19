@@ -107,7 +107,7 @@ class _ChickTransferState extends State<ChickTransfer> {
                           borderRadius: BorderRadius.circular(00),
                         ),
                         child: Text(
-                          'Farm Name:xyz',
+                          'Farm Name',
                           style: TextStyle(
                               color: Colors.white, fontWeight: FontWeight.bold),
                         ),
